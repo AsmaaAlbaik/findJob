@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AlBaik</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/css/ion.rangeSlider.skinHTML5.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie" >
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script> <!-- this for enternet explorel to understand tha html5 component -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+
+
+</head>
+<body>
+
+<!-- start header  -->
+
+<section class="header">
+    <div class="overlay">
+      <nav class="navbar  ">
+          <div class="container">
+              <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                      <i class="fas fa-align-justify fa-2x"></i>
+              </button>
+              <a class="navbar-brand" href="index.html">AlBaik</a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse  text-center" id="navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                  <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                  <li><a href="employee.html">Employers</a></li>
+                  <li><a href="candidate.html">Candidates</a></li>
+                  <li><a href="blog.html">Blogs</a></li>
+                  <li><a href="job.html">Job</a></li>
+                  <li><a href="contact.html">contact</a></li>
+
+              </ul>
+
+              <ul class="nav navbar-nav navbar-right">
+                  <!-- <li><a href="#" class="post-job"><i class="fas fa-plus"></i>  Post Job</a></li> -->
+                  <li><a href="#" class="signup-link"><i class="fas fa-key"></i>  Sign Up </a></li>
+                  <li><a href="#" class="login-link"> <i class="fas fa-external-link-square-alt"></i> Login</a></li>
+              </ul>
+              </div><!-- /.navbar-collapse -->
+          </div><!-- /.container -->
+      </nav>
+
+      <div class="container">
+         <div class="header-content text-center centering-vh">
+            <h1 class="header-title">Job List Modern</h1>
+         </div>
+      </div>
+    </div>
+</section>
+<!-- end header  -->
+
+<!-- start job-content section -->
+<section class="job-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="left-content">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search keyword" aria-describedby="basic-addon2">
+                         <span class="input-group-addon" id="basic-addon2"><i class="fas fa-search fa-lg"></i></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Location" aria-describedby="basic-addon2">
+                         <span class="input-group-addon" id="basic-addon2"><i class="fas fa-map-marker-alt fa-lg"></i></span>
+                    </div>
+
+                    <div class="date-posted mydiv">
+                      <h4 data-toggle="collapse" data-target="#demo10" aria-expanded="false" >Date Posted<i class="fas fa-plus"></i></h4>
+                      <div  id="demo10" class="collapse">
+                        <ul class="list-unstyled ">
+                          <li><input type="radio" aria-label="...">  Last Hour</li>
+                          <li><input type="radio" aria-label="...">  Last 12 Hour</li>
+                          <li><input type="radio" aria-label="...">  Last 24 Hour</li>
+                          <li><input type="radio" aria-label="...">  Last 7 Days</li>
+                          <li><input type="radio" aria-label="...">  Last 15 Days</li>
+                          <li><input type="radio" aria-label="...">  Last 30 Days</li>
+                          <li><input type="radio" aria-label="...">  All</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="job-type mydiv">
+                      <h4 data-toggle="collapse" data-target="#demo11" aria-expanded="false"> Job type<i class="fas fa-plus"></i></h4>
+                      <div  id="demo11" class="collapse">
+                        <ul class="list-unstyled ">
+                          <li><input type="checkbox" aria-label="...">Full time (8)</li>
+                          <li><input type="checkbox" aria-label="...">Part time (11)</li>
+                          <li><input type="checkbox" aria-label="..."> Freelace (10)</li>
+                          <li><input type="checkbox" aria-label="..."> Temperory (5)</li>
+                          <li><input type="checkbox" aria-label="...">  Volenteer (9)</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="specialism mydiv">
+                      <h4 data-toggle="collapse" data-target="#demo12" aria-expanded="false" >specialism<i class="fas fa-minus"></i></h4>
+                      <div  id="demo12" class="collapse in">
+                        <ul class="list-unstyled ">
+                        <li><input type="checkbox" aria-label="...">  Accountancy (2)</li>
+                          <li><input type="checkbox" aria-label="...">  Banking (2)</li>
+                          <li><input type="checkbox" aria-label="...">  Charity & Voluntary (3)</li>
+                          <li><input type="checkbox" aria-label="...">  Digital & Creative (4)</li>
+                          <li><input type="checkbox" aria-label="...">  Estate Agency (3)</li>
+                          <li><input type="checkbox" aria-label="...">  Graduate (2)</li>
+                          <li><input type="checkbox" aria-label="...">  IT Contractor (7)</li>
+                          <li><input type="checkbox" aria-label="...">  Digital & Creative (4)</li>
+                          <li><input type="checkbox" aria-label="...">  Estate Agency (3)</li>
+                          <li><input type="checkbox" aria-label="...">  Graduate (2)</li>
+                          <li><input type="checkbox" aria-label="...">  IT Contractor (7)</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="offerd-salary mydiv">
+                      <h4 data-toggle="collapse" data-target="#demo13" aria-expanded="false" aria-controls="demo13">Offerd Salary<i class="fas fa-plus"></i></h4>
+                      <div id="demo13" class="collapse ">
+                        <ul class="list-unstyled ">
+                          <li><input type="checkbox" aria-label="...">  10k - 20k</li>
+                          <li><input type="checkbox" aria-label="...">  20k - 30k</li>
+                          <li><input type="checkbox" aria-label="...">  30k - 40k</li>
+                          <li><input type="checkbox" aria-label="...">  40k - 50k</li>
+                          <li><input type="checkbox" aria-label="...">  50k - 60k</li>
+                          <li><input type="checkbox" aria-label="...">  60k - 70k</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="career-level mydiv">
+                        <h4 data-toggle="collapse" data-target="#demo14" aria-controls="demo14">Career Level<i class="fas fa-plus"></i></h4>
+                        <div id="demo14" class="collapse">
+                          <ul class="list-unstyled " >
+                          <li><input type="checkbox" aria-label="...">  Intermediate</li>
+                              <li><input type="checkbox" aria-label="...">  Normal</li>
+                              <li><input type="checkbox" aria-label="...">  Special</li>
+                              <li><input type="checkbox" aria-label="...">  Experiance</li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="experiance mydiv">
+                      <h4 type="button" data-toggle="collapse" data-target="#demo15" aria-expanded="false" aria-controls="demo15">Experiance<i class="fas fa-plus"></i></h4>
+                      <div  id="demo15" class="collapse">
+                        <ul class="list-unstyled ">
+                          <li><input type="checkbox" aria-label="...">  1 year - 2year</li>
+                          <li><input type="checkbox" aria-label="...">  2 year - 3year</li>
+                          <li><input type="checkbox" aria-label="...">  4 year - 5year</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- start gender div -->
+                    <div class="gender mydiv">
+                      <h4 type="button" data-toggle="collapse" data-target="#demo16" aria-expanded="false"  aria-controls="demo16" >Gender<i class="fas fa-minus"></i></h4>
+                      <div class="collapse in" id="demo16">
+                        <ul class="list-unstyled ">
+                          <li><input type="checkbox" aria-label="...">  Male</li>
+                          <li><input type="checkbox" aria-label="...">  Female</li>
+                        </ul>
+                      </div>
+                    </div>  <!-- end gender div -->
+                </div>
+            </div> <!-- end of left content -->
+            <div class="col-md-8">
+                <div class="right-content">
+
+                    <div class="top-right">
+                        <div class="col-sm-9">
+                        <div class="clasify">
+                            <h6>Full Time <i class="fas fa-times-circle fa-lg"></i></h6>
+                            <h6>UI/UX Design <i class="fas fa-times-circle fa-lg"></i></h6>
+                            <h6>Istanbul <i class="fas fa-times-circle fa-lg"></i></h6>
+                        </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="icon">
+                                <a href=""><i class="fas fa-cloud-download-alt fa-lg"></i> save</a>
+                                <a href=""><i class="far fa-trash-alt fa-lg"></i> delete</a>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="bottom-right">
+                        <div class="col-sm-5">
+                            <a href="" class="emailme"><i class="far fa-envelope fa-lg"></i> Email me job like this</a>
+                        </div>
+                        <div class="col-sm-7">
+                            <ul class="list-unstyled">
+                                <li>sort by</li>
+                                <li>Most Recent</li>
+                                <li>30 Per Page</li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                        <h3><span class="number-job">98</span> Jobs & Vacancies</h3>
+
+                    </div>
+
+                    <div class="box">
+                        <div class="col-sm-3">
+                            <div class="left-box">
+                                <a href="#">
+                                <img class="" src="images/logo/1.png" alt="...">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5">
+                            <div class="center-box">
+                                <h3 class="name">Web Designer / Developer</h3>
+                                <h6 class="position">Massimo Artemisis</h6>
+                                <span class="location"><i class="fas fa-map-marker-alt fa-lg"></i>Sacramento, California</span>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="like">
+                                <i class="far fa-heart fa-lg"></i><a href="#">Full time</a>
+                                <span class="month">5 months ago</span>
+                            </div>
+                        </div><div class="clearfix"></div>
+                    </div>
+
+
+                    <!-- start box -->
+                     <div class="box">
+                        <div class="col-sm-3">
+                            <div class="left-box">
+                                <a href="#">
+                                <img class="" src="images/logo/3.png" alt="...">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5">
+                            <div class="center-box">
+                                <h3 class="name">Web Designer / Developer</h3>
+                                <h6 class="position">Massimo Artemisis</h6>
+                                <span class="location"><i class="fas fa-map-marker-alt fa-lg"></i>Sacramento, California</span>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="like">
+                                <i class="far fa-heart fa-lg"></i><a href="#">Full time</a>
+                                <span class="month">5 months ago</span>
+                            </div>
+                        </div><div class="clearfix"></div>
+                    </div>
+
+                     <div class="box">
+                        <div class="col-sm-3">
+                            <div class="left-box">
+                                <a href="#">
+                                <img class="" src="images/logo/2.png" alt="...">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5">
+                            <div class="center-box">
+                                <h3 class="name">Web Designer / Developer</h3>
+                                <h6 class="position">Massimo Artemisis</h6>
+                                <span class="location"><i class="fas fa-map-marker-alt fa-lg"></i>Sacramento, California</span>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="like">
+                                <i class="far fa-heart fa-lg"></i><a href="#">Full time</a>
+                                <span class="month">5 months ago</span>
+                            </div>
+                        </div><div class="clearfix"></div>
+                    </div>
+
+                     <div class="box">
+                        <div class="col-sm-3">
+                            <div class="left-box">
+                                <a href="#">
+                                <img class="" src="images/logo/3.png" alt="...">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5">
+                            <div class="center-box">
+                                <h3 class="name">Web Designer / Developer</h3>
+                                <h6 class="position">Massimo Artemisis</h6>
+                                <span class="location"><i class="fas fa-map-marker-alt fa-lg"></i>Sacramento, California</span>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="like">
+                                <i class="far fa-heart fa-lg"></i><a href="#">Full time</a>
+                                <span class="month">5 months ago</span>
+                            </div>
+                        </div><div class="clearfix"></div>
+                    </div>
+
+                     <div class="box">
+                        <div class="col-sm-3">
+                            <div class="left-box">
+                                <a href="#">
+                                <img class="" src="images/logo/1.png" alt="...">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5">
+                            <div class="center-box">
+                                <h3 class="name">Web Designer / Developer</h3>
+                                <h6 class="position">Massimo Artemisis</h6>
+                                <span class="location"><i class="fas fa-map-marker-alt fa-lg"></i>Sacramento, California</span>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="like">
+                                <i class="far fa-heart fa-lg"></i><a href="#">Full time</a>
+                                <span class="month">5 months ago</span>
+                            </div>
+                        </div><div class="clearfix"></div>
+                    </div>
+
+                     <div class="box">
+                        <div class="col-sm-3">
+                            <div class="left-box">
+                                <a href="#">
+                                <img class="" src="images/logo/4.png" alt="...">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5">
+                            <div class="center-box">
+                                <h3 class="name">Web Designer / Developer</h3>
+                                <h6 class="position">Massimo Artemisis</h6>
+                                <span class="location"><i class="fas fa-map-marker-alt fa-lg"></i>Sacramento, California</span>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="like">
+                                <i class="far fa-heart fa-lg"></i><a href="#">Full time</a>
+                                <span class="month">5 months ago</span>
+                            </div>
+                        </div><div class="clearfix"></div>
+                    </div>
+
+
+                     <div class="box">
+                        <div class="col-sm-3">
+                            <div class="left-box">
+                                <a href="#">
+                                <img class="" src="images/logo/6.png" alt="...">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5">
+                            <div class="center-box">
+                                <h3 class="name">Web Designer / Developer</h3>
+                                <h6 class="position">Massimo Artemisis</h6>
+                                <span class="location"><i class="fas fa-map-marker-alt fa-lg"></i>Sacramento, California</span>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="like">
+                                <i class="far fa-heart fa-lg"></i><a href="#">Full time</a>
+                                <span class="month">5 months ago</span>
+                            </div>
+                        </div><div class="clearfix"></div>
+                    </div>
+
+                     <div class="box">
+                        <div class="col-sm-3">
+                            <div class="left-box">
+                                <a href="#">
+                                <img class="" src="images/logo/5.png" alt="...">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5">
+                            <div class="center-box">
+                                <h3 class="name">Web Designer / Developer</h3>
+                                <h6 class="position">Massimo Artemisis</h6>
+                                <span class="location"><i class="fas fa-map-marker-alt fa-lg"></i>Sacramento, California</span>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="like">
+                                <i class="far fa-heart fa-lg"></i><a href="#">Full time</a>
+                                <span class="month">5 months ago</span>
+                            </div>
+                        </div><div class="clearfix"></div>
+                    </div>
+                    <nav aria-label="...">
+                        <ul class="pagination pagination-sm">
+                            <li><a href="#" class="first">Prev</a></li>
+                            <li class=""><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                            <li class="active"><a href="#">2</a></li>
+                            <li class=""><a href="#">15</a></li>
+                            <li><a href="#" class="last">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end employee-content section -->
+
+
+<section class="footer-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h1 class="brand">AlBaik</h1>
+                <ul class="list-unstyled">
+                    <li>Collin Street West, Victor 8007, Australia.</li>
+                    <li>+1 246-345-0695</li>
+                    <li>info@jobhunt.com</li>
+                    <li class="links">
+                        <a href=""><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href=""><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href=""> <i class="fab fa-linkedin-in fa-lg"></i></a>
+                        <a href=""><i class="fab fa-pinterest-p fa-lg"></i></a>
+                        <a href=""><i class="fab fa-behance fa-lg"></i></a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="col-md-6">
+                <h4 class="">Frequently Asked Questions</h4>
+                <div class="col-md-6">
+                    <ul class="list-unstyled secend">
+                        <li><span class="line"></span> <a href="">  Privacy & Seurty  </a> </li>
+                        <li><span class="line"></span><a href="">  Terms of Serice</a> </li>
+                        <li><span class="line"></span> <a href=""> Communications</a> </li>
+                        <li><span class="line"></span> <a href="">  Referral Terms </a> </li>
+                        <li><span class="line"></span> <a href="">  Lending Licnses</a> </li>
+                        <li><span class="line"></span> <a href="">  Disclaimers</a> </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled secend">
+                        <li><span class="line"></span>  <a href=""> Support  </a> </li>
+                        <li><span class="line"></span>  <a href=""> How It Works</a> </li>
+                        <li><span class="line"></span>  <a href=""> For Employers</a> </li>
+                        <li><span class="line"></span>  <a href="">Underwriting </a> </li>
+                        <li><span class="line"></span>  <a href=""> Contact Us</a> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <h4 class="">Find Jobs</h4>
+                <ul class="list-unstyled secend">
+                    <li><span class="line"></span> <a href="">  US Jobs  </a> </li>
+                    <li><span class="line"></span><a href="">  Canada Jobs</a> </li>
+                    <li><span class="line"></span> <a href=""> UK Jobs</a> </li>
+                    <li><span class="line"></span> <a href="">  Emplois en Fnce </a> </li>
+                    <li><span class="line"></span> <a href="">  Jobs in Deuts</a> </li>
+                    <li><span class="line"></span> <a href="">  Vacatures China</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="text-center">
+    <div class="container">
+        <div class="copyright">
+            © 2018  All rights reserved. Asmaa Albaik
+        </div>
+    </div>
+</footer>
+<!-- end footer  -->
+
+
+<!-- start popups -->
+<div class="signup-popup text-center">
+    <div class="container">
+        <div class="signup-content">
+            <h1 class="popup-title">Sign Up</h1>
+            <a href="">Employee</a> <a href="">Candidates</a>
+             <form action="" class="form-block">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="username">
+                <i class="far fa-user fa-lg"></i>
+            </div>
+
+            <div class="input-group">
+                <input type="password" class="form-control" placeholder="password">
+                <i class="fas fa-key fa-lg"></i>
+            </div>
+            <div class="input-group">
+                <input type="email" class="form-control" placeholder="email">
+                <i class="far fa-envelope fa-lg"></i>
+            </div>
+            <div class="input-group">
+              <div class="input-group">
+                <select class="form-control" id="sel1">
+                  <option>Web Developer</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="phone number">
+                <i class="fas fa-phone fa-lg"></i>
+            </div>
+
+            <a href="" class="signup">sign up</a>
+
+            <span class="or">or</span>
+
+            <i class="fab fa-facebook-f fa-lg"></i>
+            <i class="fab fa-twitter fa-lg"></i>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="login-popup text-center">
+    <div class="container">
+        <div class="login-content">
+            <h1 class="popup-title">user login</h1>
+            <span>Click To Login With Demo User</span>
+            <a href="">Employee</a> <a href="">Candidates</a>
+            <form action="" class="form-block">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="username">
+                    <i class="far fa-user fa-lg"></i>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" class="form-control" placeholder="password">
+                    <i class="fas fa-key fa-lg"></i>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="checkbox" aria-label="..."> Remember me
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="" class="forget">forget password?</a>
+                    </div>
+                </div>
+
+                <a href="" class="login">login</a>
+
+                <span class="or">or</span>
+
+                <i class="fab fa-facebook-f fa-lg"></i>
+                <i class="fab fa-twitter fa-lg"></i>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="scrollUp">
+    <i class="fas fa-long-arrow-alt-up fa-lg"></i>
+</div>
+
+
+
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script defer src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/js/ion.rangeSlider.min.js"></script>
+
+  <script defer src="js/plugins.js"></script>
+
+
+
+    </body>
+</html>

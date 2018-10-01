@@ -1,0 +1,175 @@
+/* Start media Query */
+/*this style from 0 screen to mobile screen*/
+@media (max-width:768px){
+
+   .header .centering-vh{
+        margin-top: 15vh
+    }
+    .header h1.header-title{
+        font-size: 18px;
+    }
+    .header .header-span {
+      font-size: 11px;
+    }
+    .header .header-content .input-group .btn{
+        font-size: 10px;
+        padding: 15px;
+    }
+    .header .header-content .input-group .form-control {
+      height: 46px;
+      padding: 15px;
+
+    }
+
+   .header button {
+       margin: 0;
+   }
+    .header .header-content .input-group{
+        padding: 0;
+    }
+    .header .service .icon p {
+      font-size: 12px !important;
+    }
+    .header .service .icon span {
+      font-size: 10px !important;
+    }
+
+    .navbar .navbar-brand{
+        font-size: 35px;
+        margin-top: 0px;
+        padding: 15px;
+    }
+    .nav > li{
+        text-align: left;
+    }
+    .recent-job .title {
+      font-size: 20px;
+    }
+    .recent-job .load a.load-more {
+      font-size: 14px;
+    }
+    .recent-job .recent-span {
+      font-size: 12px;
+    }
+    .how-work h1.title,
+    .counter h1.title ,
+    .client h1.title,
+    .career-tips h1.title,
+    .plan h1.title{
+      font-size: 20px;
+    }
+    .how-work p.work-details,
+    .rigester .rigester-details,
+    .counter .counter-details,
+    .plan .plan-details {
+      font-size: 12px;
+    }
+    .rigester h1.title {
+      font-size: 20px;
+    }
+    .blog-content .left-content .right-box ul li{
+        margin-right: 10px;
+    }
+    .candidate-content .right-content a.more{
+        margin-top: 0;
+    }
+    .job-content .right-content .box {
+        text-align: center;
+    }
+    .navbar-right {
+        float: left !important;
+    }
+    .counter{
+        height: 490px
+    }
+     .footer-top{
+        text-align: center
+    }
+    .job-content .bottom-right ul {
+      float: none;
+    }
+    .job-content .right-content .pagination > li > a,
+    .employee-content .right-content .pagination > li > a ,
+    .candidate-content .right-content .pagination > li > a ,
+    .blog-content .left-content .pagination > li > a{
+       margin-right: 0;
+    }
+     .job-content .right-content .pagination > li > a.first,
+     .job-content .right-content .pagination > li > a.last,
+     .employee-content .right-content .pagination > li > a.first,
+     .employee-content .right-content .pagination > li > a.last,
+     .candidate-content .right-content .pagination > li > a.first,
+     .candidate-content .right-content .pagination > li > a.last,
+     .blog-content .left-content .pagination > li > a.first,
+     .blog-content .left-content .pagination > li > a.last{
+       width: 65px;
+     }
+     .recent-job .box ,
+     .rigester .box,
+     .career-tips .box,
+     .plan .box{
+       width: 70%;
+       margin: 10px auto;
+     }
+
+}
+
+@media (min-width:320px) and (max-width:500px) {
+  .recent-job .box ,
+  .rigester .box,
+  .career-tips .box,
+  .plan .box{
+    width: 100%;
+  }
+
+}
+
+/*from small to media screen*/
+@media (min-width:768px) and (max-width:991px){
+    .header h1.header-title{
+        font-size: 25px;
+    }
+    .header .header-content .input-group .btn{
+        font-size: 18px;
+    }
+   .header button {
+       margin: 0;
+   }
+    .header .header-content .input-group{
+        padding: 0;
+    }
+    .navbar-nav > li > a{
+        font-size: 13px;
+    }
+    .navbar .navbar-brand{
+        font-size: 35px;
+        margin-top: 5px;
+    }
+      .navbar-right {
+        float: left !important;
+    }
+
+
+
+}
+@media (min-width:992px) and (max-width:1199px)
+{
+    .how-work .icon .line1 , .how-work .icon .line2{
+            width: 270px;
+
+    }
+    .navbar-right {
+        float: left !important;
+    }
+}
+
+
+@media (min-width:1100px){
+    .signup-popup .signup-content,
+.login-popup .login-content{
+    width: 450px;
+
+}
+}
+
+/* End media Query */
